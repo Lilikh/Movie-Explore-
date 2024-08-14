@@ -23,6 +23,6 @@ export const getMovieDetails = async (id) => {
   } catch (error) {
     console.log(error);
     
-    throw new Error('Failed to fetch movie details');
+    throw new Error('');
   }
 };

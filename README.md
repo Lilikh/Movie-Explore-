@@ -31,6 +31,10 @@ A React application to explore movies using the OMDB API.
     5. Install fontawsemnpm 
      * install @fortawesome/fontawesome-free
 
+   6. Install axios for fetching API
+      * npm install axios
+
+
 
 
 

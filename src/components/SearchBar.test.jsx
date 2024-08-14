@@ -9,7 +9,7 @@ test('renders SearchBar and handles input change', () => {
   render(<SearchBar query="" onQueryChange={handleQueryChange} onSearch={handleSearch} />);
   
   // Debugging logs
-  console.log(screen.getByPlaceholderText('...'));
+  console.log(screen.getByPlaceholderText('Search for movies...'));
   console.log(screen.getByText('Search'));
 
   fireEvent.change(screen.getByPlaceholderText('Search for movies...'), { target: { value: 'Inception' } });

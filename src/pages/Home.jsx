@@ -10,7 +10,7 @@ const Home = () => {
     query,
     setQuery,
     movies,
-    fetchMovies,
+    
     selectedMovie,
     error,
   } = useMovies();

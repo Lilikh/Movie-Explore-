@@ -26,7 +26,7 @@ const FavoriteButton = ({ movie }) => {
 
   return (
     <button onClick={handleFavoriteClick}>
-      <i className={`fas fa-heart ${isFavorite ? 'text-orange-500-500' : 'text-gray-400'}`}></i>
+      <i className={`fas fa-heart ${isFavorite ? 'text-red-500' : 'text-gray-400'}`}></i>
     </button>
   );
 };

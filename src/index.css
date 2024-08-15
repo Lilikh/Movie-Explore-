@@ -10,7 +10,7 @@
     background-position: center;
 }
 .spinner {
-    border-top: 4px solid #ffffff; /* Color of the spinner */
+    border-top: 4px solid #ffffff; 
     border-right: 4px solid transparent;
     border-bottom: 4px solid transparent;
     border-left: 4px solid transparent;

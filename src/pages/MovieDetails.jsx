@@ -63,7 +63,7 @@ const MovieDetails = () => {
           Back to Search Results
         </button>
     
-        <div className='flex flex-col justify-center w-full sm:w-4/12 lg:w-4/12 
+        <div className='flex flex-col justify-center w-full sm:w-4/12 lg:w-3/12 
         m-auto bg-green-950 rounded-md mb-4 gap-4 sm:gap-6 text-base px-4 sm:px-6 py-4'>
      <img
         src={movie.Poster}

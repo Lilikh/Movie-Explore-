@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-const FavoriteButton = ({ movie }) => {
+const FavoriteButton = ({ movie, onFavoriteToggle }) => {
   const [isFavorite, setIsFavorite] = useState(false);
 
   useEffect(() => {
@@ -11,15 +11,20 @@ const FavoriteButton = ({ movie }) => {
 
   const handleFavoriteClick = (e) => {
     e.stopPropagation();
-    setIsFavorite(prevState => {
+    setIsFavorite((prevState) => {
       const newFavoriteStatus = !prevState;
       let savedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
       if (newFavoriteStatus) {
         savedFavorites.push(movie);
       } else {
-        savedFavorites = savedFavorites.filter(favMovie => favMovie.imdbID !== movie.imdbID);
+        savedFavorites = savedFavorites.filter((favMovie) => favMovie.imdbID !== movie.imdbID);
       }
       localStorage.setItem('favorites', JSON.stringify(savedFavorites));
+      
+      if (onFavoriteToggle) {
+        onFavoriteToggle(movie, newFavoriteStatus);
+      }
+      
       return newFavoriteStatus;
     });
   };

@@ -39,7 +39,7 @@ A React application to explore movies using the OMDB API.
 *** Issue with Demo Deployed on Vercel ***
 
 # Deploy a Demo on Vercel 
-- I deployed my code on Vercel, but after deployment, I ran into an issue. Specifically, when I try to search for a    movie(Error: Failed to fetch movies), I encounter a CORS error. The core problem seems to be that Vercel doesn't support the TMDB API, which is causing these errors
+- I deployed my code on Vercel, but after deployment, I ran into an issue. Specifically, when I try to search for a movie " Error: Failed to fetch movies " , I encounter a CORS error. The core problem seems to be that Vercel doesn't support the  OMDB API, which is causing these errors
 
 
 

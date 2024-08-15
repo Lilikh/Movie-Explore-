@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { searchMovies, getMovieDetails } from '../api';
 

@@ -2,6 +2,7 @@
 
 A React application to explore movies using the OMDB API.
 
+
 ## Setup
 
 1. Clone the repository:
@@ -9,7 +10,7 @@ A React application to explore movies using the OMDB API.
    git clone <repository-url>
    cd movie-explorer
     npm install
-    npm start
+    npm run dev
     npm test
    ```
 
@@ -18,7 +19,7 @@ A React application to explore movies using the OMDB API.
    2. style with tailwind install tailwind
     * npm install -D tailwindcss postcss autoprefixer
     * npx tailwindcss init -p
-    - Configure some thing on tailwind.config.js
+    - Configure some things on tailwind.config.js
 
  
    
@@ -35,7 +36,10 @@ A React application to explore movies using the OMDB API.
       * npm install axios
 
 
+*** Issue with Demo Deployed on Vercel ***
 
+# Deploy a Demo on Vercel 
+- I deployed my code on Vercel, but after deployment, I ran into an issue. Specifically, when I try to search for a    movie(Error: Failed to fetch movies), I encounter a CORS error. The core problem seems to be that Vercel doesn't support the TMDB API, which is causing these errors
 
 
 

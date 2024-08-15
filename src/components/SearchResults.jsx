@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 
 const SearchResults = ({ movies }) => {
   const navigate = useNavigate();
-  console.table('movies listed',movies);
+ 
   
 
   const handleSelectMovie = (id) => {

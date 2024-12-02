@@ -2,15 +2,10 @@ import axios from 'axios';
 /* 
 
 const API_KEY = '65063cda';
-*/
+const BASE_URL = 'http://www.omdbapi.com/'; //http://www.omdbapi.com/?i=tt3896198&apikey=65063cda */
+
 const API_KEY = import.meta.env.VITE_API_KEY;
-console.log( 'APIkey',API_KEY); 
-console.log(import.meta.env.VITE_API_KEY);
-
-const BASE_URL = 'http://www.omdbapi.com/'; //http://www.omdbapi.com/?i=tt3896198&apikey=65063cda 
-
-
-
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 
 export const searchMovies = async (query) => {

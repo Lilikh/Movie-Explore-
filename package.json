@@ -54,11 +54,11 @@
       "\\.(css|less|scss|sass)$": "identity-obj-proxy"
     }
   },
-  "engines": {
-    "node": "16.x"
-  },
   "main": "eslint.config.js",
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node": "18.x"
+  }
 }

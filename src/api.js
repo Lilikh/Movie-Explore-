@@ -1,9 +1,11 @@
 import axios from 'axios';
 
-const API_KEY = import.meta.env.VITE_API_KEY;
-const BASE_URL = import.meta.env.VITE_BASE_URL;
+const API_KEY = import.meta.env.VITE_API_KEY || '65063cda';
+const BASE_URL = import.meta.env.MODE === 'development'
+  ? (import.meta.env.VITE_BASE_URL || 'http://www.omdbapi.com/')
+  : `https://cors-anywhere.herokuapp.com/${import.meta.env.VITE_BASE_URL || 'http://www.omdbapi.com/'}`;
 
-console.log('Environment:', { API_KEY, BASE_URL });
+console.log('Environment:', { API_KEY, BASE_URL, MODE: import.meta.env.MODE });
 
 export const searchMovies = async (query) => {
   try {
@@ -20,6 +22,7 @@ export const searchMovies = async (query) => {
       url: error.config?.url,
       headers: error.config?.headers,
       code: error.code,
+      request: error.request ? 'Request made but no response received' : 'No request made',
     });
     throw new Error('Failed to fetch movies');
   }
@@ -40,6 +43,7 @@ export const getMovieDetails = async (id) => {
       url: error.config?.url,
       headers: error.config?.headers,
       code: error.code,
+      request: error.request ? 'Request made but no response received' : 'No request made',
     });
     throw new Error('Failed to fetch movie details');
   }

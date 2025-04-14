@@ -1,5 +1,5 @@
 {
-  "name": "react-movie-app",
+  "name": "index.js",
   "private": true,
   "version": "1.0.0",
   "description": "A React application to explore movies using the OMDB API.",

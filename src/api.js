@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const API_KEY = import.meta.env.VITE_API_KEY || '65063cda';
 const BASE_URL = import.meta.env.VITE_BASE_URL || 'http://www.omdbapi.com/';
-const PROXY_URL = 'https://movie-explore-proxy-abc.onrender.com/api/proxy';
+const PROXY_URL = 'https://move-explore-proxy.onrender.com/api/proxy';
 const USE_PROXY = import.meta.env.MODE !== 'development';
 
 console.log('Environment:', {

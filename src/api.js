@@ -53,7 +53,7 @@ export const getMovieDetails = async (id) => {
       timeout: 10000,
       headers: {
         'Accept': 'application/json',
-        'User-Agent': 'Movie-Explore-App/1.0'
+       
       }
     });
     console.log('Movie Details Response:', {

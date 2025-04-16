@@ -11,7 +11,7 @@ const SearchBar = ({ query, onQueryChange, onSearch}) => {
       Unlimited films, TV programmes and more
     </h2>
     <h4 className="text-lg sm:text-xl md:text-2xl font-bold text-center text-slate-100 mb-4 md:mb-8">
-      Ready to watch? Enter your movie and find exactly what you are looking for.
+      Ready to watch? Enter your movie and find exactly what you are looking for?
     </h4>
     
     <div className="flex flex-col sm:flex-row justify-center items-center">
@@ -26,7 +26,7 @@ const SearchBar = ({ query, onQueryChange, onSearch}) => {
         onClick={onSearch} 
         className="w-full sm:w-auto rounded-md bg-red-600 p-2 text-slate-100"
       >
-        Search
+        Search 
       </button>
     </div>
   </div>
